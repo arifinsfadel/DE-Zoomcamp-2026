@@ -77,8 +77,8 @@ Throughout this course, I am working with:
 
 Thank you for visiting my repository! I am always open to discussing *Data Engineering*, *Cloud Infrastructure*, or potential project collaborations.
 
-* **LinkedIn:** [Your Name](https://linkedin.com/in/your-username)
-* **Email:** [your.email@example.com](mailto:your.email@example.com)
+* **LinkedIn:** [Your Name](www.linkedin.com/in/fadel-arifin-syalfinaf-933282131)
+* **Email:** [your.email@example.com](mailto:your.email@gmail.com)
 
 ---
 *Last Updated: 26-01-2026*
