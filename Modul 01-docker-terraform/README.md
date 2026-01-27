@@ -182,3 +182,51 @@ Question 6. Largest Tip
     Q6: For the passengers picked up in the zone named "East Harlem North" in November 2025, which was the drop off zone that had the largest tip?
 
 Query: 
+SELECT 
+    zdo."Zone" AS dropoff_zone,
+    MAX(g.tip_amount) AS max_tip -- Pastikan ada spasi sebelum FROM
+FROM 
+    green_taxi_data AS g -- Gunakan nama tabel yang benar
+JOIN 
+    zones AS zpu -- Gunakan nama tabel yang benar
+    ON g."PULocationID" = zpu."LocationID"
+JOIN 
+    zones AS zdo 
+    ON g."DOLocationID" = zdo."LocationID"
+WHERE 
+    zpu."Zone" = 'East Harlem North' -- Gunakan '=' jika namanya spesifik
+    AND g.lpep_pickup_datetime >= '2025-11-01'
+    AND g.lpep_pickup_datetime < '2025-12-01'
+GROUP BY 
+    dropoff_zone
+ORDER BY 
+    max_tip DESC
+LIMIT 1;
+
+Answer: 
+<img width="704" height="543" alt="image" src="https://github.com/user-attachments/assets/3e409c86-be40-4fa5-b5a3-117c7d49cdca" />
+
+Question 7. Terraform
+
+    Q7: Which of the following sequences, respectively, describes the workflow for:
+
+        Downloading the provider plugins and setting up the backend
+        Generating proposed changes and auto-executing the plan
+        Removing all resources managed by Terraform
+
+    Choices:
+
+        terraform import, terraform apply -y, terraform destroy
+        teraform init, terraform plan -auto-apply, terraform rm
+        terraform init, terraform run -auto-approve, terraform destroy
+        terraform init, terraform apply -auto-approve, terraform destroy
+        terraform import, terraform apply -y, terraform rm
+
+ Answer:
+The right answers: terraform init, terraform apply -auto-approve, terraform destroy
+
+Explanation:
+
+    terraform init: Initializes the working directory, downloads the necessary provider plugins, and configures the backend for state storage.
+    terraform apply -auto-approve: Scans the configuration to generate proposed changes and executes them immediately, skipping the manual "yes" confirmation prompt.
+    terraform destroy: Identifies all resources currently managed in the state file and removes them from the infrastructure provider.
