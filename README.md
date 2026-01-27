@@ -34,7 +34,7 @@ Throughout this course, I am working with:
 
 | Module | Topic | Tech Stack | Status | Solution |
 | :--- | :--- | :--- | :---: | :--- |
-| **01** | Containerization & IaC | Docker, SQL, Terraform | ✅ | [View Code](./https://github.com/arifinsfadel/DE-Zoomcamp-2026/blob/main/Modul%2001-docker-terraform/README.md/) |
+| **01** | Containerization & IaC | Docker, SQL, Terraform | ✅ | [View Code](./week_1_Modul_01-docker-terraform/) |
 | **02** | Workflow Orchestration | Kestra | 🏗️ | [View Code](./week_2/) |
 | **03** | Data Warehouse | BigQuery | 📅 | *Pending* |
 | **W1** | **Workshop: Data Ingestion** | **dltHub (dlt)** | 📅 | *Pending* |
