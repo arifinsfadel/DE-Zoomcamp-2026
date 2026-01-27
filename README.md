@@ -34,7 +34,7 @@ Throughout this course, I am working with:
 
 | Module | Topic | Tech Stack | Status | Solution |
 | :--- | :--- | :--- | :---: | :--- |
-| **01** | Containerization & IaC | Docker, SQL, Terraform | ✅ | [View Code](Modul 01-docker-terraform./week_1/) |
+| **01** | Containerization & IaC | Docker, SQL, Terraform | ✅ | [View Code](./week_1Modul 01-docker-terraform/) |
 | **02** | Workflow Orchestration | Kestra | 🏗️ | [View Code](./week_2/) |
 | **03** | Data Warehouse | BigQuery | 📅 | *Pending* |
 | **W1** | **Workshop: Data Ingestion** | **dltHub (dlt)** | 📅 | *Pending* |
