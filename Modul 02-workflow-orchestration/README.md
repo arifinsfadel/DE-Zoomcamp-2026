@@ -91,6 +91,8 @@ WHERE EXTRACT(YEAR FROM lpep_pickup_datetime) = 2020;
 
 ✅ Answer:
 Number of rows in Green Taxi Data for 2020 is 1,734,051 rows
+
+
 Question 5. Total Row Number of Data of Green Taxi on 2020
 
     How many rows are there for the Yellow Taxi data for the March 2021 CSV file?
@@ -104,6 +106,7 @@ WHERE tpep_pickup_datetime >= '2021-03-01 00:00:00'
 
 ✅ Answer:
 Number of rows in Green Taxi Data for March 2021 is 1,925,152 rows
+
 Question 6. Timezone Configuration in Schedule Trigger
 
     How would you configure the timezone to New York in a Schedule trigger?
