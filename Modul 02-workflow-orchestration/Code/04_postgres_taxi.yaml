@@ -43,7 +43,7 @@ tasks:
       type: io.kestra.plugin.core.runner.Process
     commands:
       - wget -qO- https://github.com/DataTalksClub/nyc-tlc-data/releases/download/{{inputs.taxi}}/{{render(vars.file)}}.gz | gunzip > {{render(vars.file)}}
-
+      - du -b {{render(vars.file)}} | awk '{printf "%.1f MiB\n", $1/1048576}' # Compute the uncompressed file size in MiB
   - id: if_yellow_taxi
     type: io.kestra.plugin.core.flow.If
     condition: "{{inputs.taxi == 'yellow'}}"
